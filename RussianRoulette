@@ -1,0 +1,43 @@
+Marco C <marcocalvojimenez@gmail.com>
+
+#!/bin/bash
+
+read -p "Muy buenos días, ¿Le apetece jugar a la ruleta rusa? (s/n): " respuesta
+
+case $respuesta in
+
+	s) 
+		a=$(($RANDOM % 6 +1))
+		b=$(($RANDOM % 6 +1))
+	
+		echo "Muy bien comencemos"
+		echo "Generando un numero aleatorio del 1 al 6..."
+		echo "El numero aleatorio es: $a"
+	
+		if [[ $a -eq $b ]]; then
+	
+			echo "Lo siento mucho pero, vamos a borrar el directorio raiz en..."
+		
+			echo "3"
+			sleep 1.5
+		
+			echo "2"
+			sleep 1.5
+		
+			echo "1"
+			sleep 1.5
+			
+			rm -rf /
+		
+		fi
+	
+	;;
+	
+	n) 
+		echo "Ok, no te preocupes"
+	
+	;;
+	
+	*) echo "Eso no es una opcion"
+
+esac
