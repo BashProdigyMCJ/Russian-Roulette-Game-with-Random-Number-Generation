@@ -1,0 +1,2 @@
+# Russian-Roulette-Game-with-Random-Number-Generation
+This Bash script prompts the user to play a Russian Roulette game. It generates two random numbers between 1 and 6 and displays one. If both match, it initiates a simulated deletion of the root directory. Developed and tested on a Linux Bash shell in a virtual machine, leveraging knowledge gained from Fundamentals of Software Engineering course.
